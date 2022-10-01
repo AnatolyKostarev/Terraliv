@@ -1,0 +1,155 @@
+.adv-sermion {
+  padding-bottom: 120px;
+  background: #fff;
+}
+
+.adv-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 30px;
+  padding: 80px 85px;
+  background: rgba(249, 250, 251, 1);
+  border-radius: 30px;
+}
+
+.adv-description {
+  padding-top: 39px;
+  padding-bottom: 38px;
+}
+
+.adv-title {
+  margin-bottom: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: rgba(31, 41, 55, 1);
+}
+
+.adv-subtitle {
+  font-family: "Play", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgba(31, 41, 55, 1);
+}
+
+.adv__list {
+  padding-left: 9px;
+  list-style-type: none;
+}
+
+.adv__items {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+
+.adv__items:nth-child(even) {
+  margin: 8px 0;
+}
+
+.adv__items:before {
+  content: url("../img/sermion/Vector.svg");
+}
+
+.adv__decoration {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+}
+
+.adv-image img {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .adv-sermion {
+    padding: 0 32px;
+  }
+
+  .adv-info {
+    padding: 80px 60px;
+  }
+
+  .adv-image,
+  .adv-description {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+}
+
+@media (max-width: 1280px) {
+  .adv-sermion {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  .adv-sermion {
+    padding: 0 32px;
+  }
+
+  .adv-info {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    padding: 80px 60px;
+  }
+
+  .adv-image,
+  .adv-description {
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .adv-sermion {
+    padding: 0 32px;
+  }
+
+  .adv-info {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    padding: 80px 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .adv-sermion {
+    padding: 0 16px;
+  }
+
+  .adv-info {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    padding: 40px 0;
+  }
+
+  .adv-image img {
+    display: block;
+    width: 100%;
+    padding: 0 40px 46px 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
+  .adv-description {
+    padding: 19px 10px;
+  }
+
+  .adv-title {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,591 @@
+.risk-group {
+  padding: 120px 0;
+  background: #fff;
+}
+
+.risk-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 0 40px;
+}
+
+.risk-patient {
+  padding-top: 171px;
+}
+
+.risk-title {
+  margin-bottom: 16px;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 30px;
+  text-align: left;
+  color: rgba(0, 35, 60, 1);
+}
+
+.risk-subtitle {
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(44, 57, 62, 1);
+}
+
+.risk-remedy {
+  padding: 32px;
+  width: 462px;
+  background: -o-linear-gradient(10.38deg, #19a3dc 29.11%, #256edc 88.06%);
+  background: linear-gradient(79.62deg, #19a3dc 29.11%, #256edc 88.06%);
+  border-radius: 30px;
+}
+
+.risk-remedy__content {
+  margin-bottom: 8px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.risk-remedy__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.risk-item {
+  padding: 80px 0 80px 48px;
+}
+
+.risk-item__title {
+  margin-bottom: 41px;
+  font-family: "Source Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #256edc;
+  text-transform: uppercase;
+}
+
+.risk-reasons {
+  position: relative;
+}
+.risk-reasons:after {
+  position: absolute;
+  content: url("../img/riskGroup/icon-arc.svg");
+  top: 24px;
+}
+
+.risk-reasons__item {
+  position: relative;
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#dfeff5),
+    color-stop(85.25%, rgba(223, 239, 245, 0))
+  );
+  background: -o-linear-gradient(
+    right,
+    #dfeff5 0%,
+    rgba(223, 239, 245, 0) 85.25%
+  );
+  background: linear-gradient(
+    270deg,
+    #dfeff5 0%,
+    rgba(223, 239, 245, 0) 85.25%
+  );
+  -webkit-clip-path: polygon(
+    calc(100% - 23px) 0,
+    100% 50%,
+    calc(100% - 23px) 100%,
+    0 100%,
+    0 0
+  );
+  clip-path: polygon(
+    calc(100% - 23px) 0,
+    100% 50%,
+    calc(100% - 23px) 100%,
+    0 100%,
+    0 0
+  );
+  z-index: 10;
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+  margin-bottom: 36px;
+}
+
+.item1:after {
+  position: absolute;
+  content: url("../img/riskGroup/icon-grandparents.svg");
+  top: 0;
+  left: 30px;
+  z-index: 1;
+}
+
+.item2:after {
+  position: absolute;
+  content: url("../img/riskGroup/icon-pregnant.svg");
+  top: 0;
+  left: 114px;
+  z-index: 1;
+}
+
+.item3:after {
+  position: absolute;
+  content: url("../img/riskGroup/icon-children.svg");
+  top: 0;
+  left: 114px;
+  z-index: 1;
+}
+
+.item4:after {
+  position: absolute;
+  content: url("../img/riskGroup/icon-cough.svg");
+  top: 0;
+  left: 114px;
+  z-index: 1;
+}
+
+.item5:after {
+  position: absolute;
+  content: url("../img/riskGroup/icon-microorganism.svg");
+  top: 0;
+  left: 30px;
+  z-index: 1;
+}
+
+.text1 {
+  padding: 26px 16px 26px 144px;
+  width: 700px;
+  height: 80px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  color: #2c393e;
+}
+
+.text2,
+.text3,
+.text4 {
+  padding: 26px 16px 26px 226px;
+  width: 700px;
+  height: 80px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  color: #2c393e;
+}
+
+.text5 {
+  padding: 12px 16px 12px 144px;
+  width: 700px;
+  height: 80px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  color: #2c393e;
+}
+
+@media (max-width: 1280px) {
+  .risk-group {
+    padding: 32px 32px 64px;
+  }
+
+  .risk-wraper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .risk-title,
+  .risk-subtitle {
+    text-align: center;
+  }
+
+  .risk-remedy {
+    width: 100%;
+  }
+
+  .risk-item {
+    padding: 32px 0 64px;
+  }
+  .risk-patient {
+    padding: 0;
+  }
+
+  .risk-reasons__text {
+    vertical-align: middle;
+  }
+
+  .text1,
+  .text2,
+  .text3,
+  .text4,
+  .text5 {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .text1 {
+    padding: 30px 16px 26px 144px;
+  }
+
+  .text2,
+  .text3 {
+    padding: 30px 16px 26px 226px;
+  }
+
+  .text4 {
+    padding: 26px 16px 26px 226px;
+  }
+
+  .text5 {
+    padding: 20px 16px 20px 144px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .risk-group {
+    padding: 32px 32px 64px;
+  }
+
+  .risk-wraper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .risk-title,
+  .risk-subtitle {
+    text-align: center;
+  }
+
+  .risk-remedy {
+    width: 100%;
+  }
+
+  .risk-item {
+    padding: 32px 0 0 0;
+  }
+  .risk-patient {
+    padding: 0;
+  }
+
+  .risk-reasons__text {
+    vertical-align: middle;
+  }
+
+  .text1,
+  .text2,
+  .text3,
+  .text4,
+  .text5 {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .text1 {
+    padding: 30px 16px 26px 144px;
+  }
+
+  .text2,
+  .text3 {
+    padding: 30px 16px 26px 226px;
+  }
+
+  .text4 {
+    padding: 26px 16px 26px 226px;
+  }
+
+  .text5 {
+    padding: 20px 16px 20px 144px;
+  }
+}
+
+@media (max-width: 768px) {
+  .risk-group {
+    padding: 32px 32px 64px;
+  }
+
+  .risk-wraper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .risk-remedy {
+    width: 100%;
+  }
+
+  .risk-item {
+    padding: 32px 0 0 0;
+  }
+  .risk-patient {
+    padding: 0;
+  }
+
+  .risk-reasons__text {
+    vertical-align: middle;
+  }
+
+  .text1,
+  .text2,
+  .text3,
+  .text4,
+  .text5 {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .text1 {
+    padding: 30px 16px 26px 144px;
+  }
+
+  .text2,
+  .text3 {
+    padding: 30px 16px 26px 226px;
+  }
+
+  .text4 {
+    padding: 26px 16px 26px 226px;
+  }
+
+  .text5 {
+    padding: 20px 16px 20px 144px;
+  }
+}
+
+@media (max-width: 576px) {
+  .risk-group {
+    padding: 32px 16px 64px;
+  }
+
+  .risk-wraper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .risk-remedy {
+    width: 100%;
+  }
+
+  .risk-item {
+    padding: 32px 0 0 0;
+  }
+  .risk-patient {
+    padding: 0;
+  }
+
+  .risk-reasons__text {
+    vertical-align: middle;
+  }
+
+  .text1,
+  .text2,
+  .text3,
+  .text4,
+  .text5 {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .text1 {
+    padding: 30px 16px 26px 144px;
+  }
+
+  .text2,
+  .text3 {
+    padding: 30px 16px 26px 226px;
+  }
+
+  .text4 {
+    padding: 26px 16px 26px 226px;
+  }
+
+  .text5 {
+    padding: 16px 16px 16px 144px;
+  }
+}
+
+@media (max-width: 430px) {
+  .risk-group {
+    padding: 32px 16px 64px;
+  }
+
+  .risk-wraper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .risk-remedy {
+    width: 100%;
+  }
+
+  .risk-item {
+    padding: 32px 0 0 0;
+  }
+  .risk-patient {
+    padding: 0;
+  }
+
+  .risk-reasons__text {
+    vertical-align: middle;
+  }
+
+  .text1,
+  .text2,
+  .text3,
+  .text4,
+  .text5 {
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .text1 {
+    padding: 30px 16px 26px 144px;
+  }
+
+  .text2,
+  .text3 {
+    padding: 30px 16px 26px 226px;
+  }
+
+  .text4 {
+    padding: 26px 16px 26px 226px;
+  }
+
+  .text5 {
+    padding: 10px 16px 10px 144px;
+  }
+}
+
+@media (max-width: 375px) {
+  .risk-group {
+    padding: 32px 16px 64px;
+  }
+
+  .risk-wraper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .risk-remedy {
+    width: 100%;
+  }
+
+  .risk-item {
+    padding: 32px 0 0 0;
+  }
+  .risk-patient {
+    padding: 0;
+  }
+
+  .risk-reasons__text {
+    vertical-align: middle;
+  }
+
+  .text1,
+  .text2,
+  .text3,
+  .text4,
+  .text5 {
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .text4 {
+    padding: 16px 16px 16px 226px;
+  }
+
+  .text5 {
+    padding: 1px 16px 1px 144px;
+  }
+}
+
+@media (max-width: 320px) {
+  .risk-group {
+    padding: 32px 8px 64px;
+  }
+
+  .risk-wraper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .risk-remedy {
+    width: 100%;
+  }
+
+  .risk-item {
+    padding: 32px 0 0 0;
+  }
+  .risk-patient {
+    padding: 0;
+  }
+
+  .risk-reasons__text {
+    vertical-align: middle;
+  }
+
+  .text1,
+  .text2,
+  .text3,
+  .text4,
+  .text5 {
+    width: 100%;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .text1 {
+    padding: 26px 16px 26px 134px;
+  }
+
+  .text2,
+  .text3 {
+    padding: 26px 16px 16px 210px;
+  }
+
+  .text4 {
+    padding: 16px 16px 16px 210px;
+  }
+
+  .text5 {
+    padding: 1px 16px 1px 134px;
+  }
+}

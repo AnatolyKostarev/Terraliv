@@ -1,0 +1,30 @@
+@import "modern-normalize.css";
+@import "header.css";
+@import "riskGroup.css";
+@import "sermion.css";
+@import "question.css";
+@import "popup.css";
+
+body {
+  background: rgba(255, 255, 255, 1);
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
